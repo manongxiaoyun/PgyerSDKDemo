@@ -1,0 +1,25 @@
+buildscript {
+    ext {
+        kotlin_version = '1.5.0'
+    }
+    repositories {
+        mavenCentral()
+        google()
+        maven { url "https://frontjs-static.pgyer.com/dist/sdk/pgyersdk" }
+//        maven { url "https://raw.githubusercontent.com/PGYER/analytics/master" }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.1'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+        maven { url "https://frontjs-static.pgyer.com/dist/sdk/pgyersdk" }
+//        maven { url "https://raw.githubusercontent.com/PGYER/analytics/master" }
+    }
+}
